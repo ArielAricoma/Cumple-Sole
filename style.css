@@ -7,6 +7,7 @@ body {
     background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
     font-family: 'Arial', sans-serif;
     overflow: hidden;
+    padding: 10px; /* Añadido para mejorar el espaciado en dispositivos móviles */
 }
 
 .container {
@@ -31,6 +32,7 @@ h1 {
     justify-content: center;
     gap: 10px;
     margin: 20px 0;
+    flex-wrap: wrap; /* Añadido para que las fotos se ajusten mejor en dispositivos móviles */
 }
 
 .photos img {
@@ -47,6 +49,7 @@ h1 {
     justify-content: center;
     gap: 20px;
     margin-top: 30px;
+    flex-wrap: wrap; /* Añadido para que los globos se ajusten mejor en dispositivos móviles */
 }
 
 .balloon {
@@ -155,4 +158,28 @@ h1 {
         transform: translateY(100vh);
         opacity: 0;
     }
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .message {
+        font-size: 1.2em;
+    }
+
+    .photos img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .balloon {
+        width: 40px;
+        height: 60px;
+    }
+}
+p{
+    font-family: 'Times New Roman', Times, serif, Courier, monospace;
 }
